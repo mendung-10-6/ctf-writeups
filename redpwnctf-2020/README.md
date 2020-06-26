@@ -1,1 +1,1 @@
-I'm doing mostly crypto challenges.
+We got 68th place in this competition

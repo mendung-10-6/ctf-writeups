@@ -1,0 +1,1 @@
+We got **50th** rank out of 418 team in this competition

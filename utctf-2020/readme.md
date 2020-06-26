@@ -1,0 +1,3 @@
+We got **196th** rank out of 1001 team in this [competition](https://ctftime.org/event/929)
+
+Its a pretty fun and challenging ctf but because we haven't posses the **binary exploitation** and **reverse engineering** skills yet (not the advance one haha), its very hard to do those kind of challenges leaving the easy challenges that we can only do (this is basically the reason why most of challenges we solved are just 50pts in the end of the ctf 😂)

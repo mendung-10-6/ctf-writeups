@@ -1,0 +1,1 @@
+We got **2nd** rank out of ~24 team in this competition

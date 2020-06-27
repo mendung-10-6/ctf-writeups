@@ -419,3 +419,27 @@ output : `id_and_python_is_stupid}flag{crypto_is_stup`
 My solution may look atupid and lazy but actually I tried to find some way to decrypt the rc4() function however I can't really find it, so I believe that this is the actual intended solution.  
   
 flag : `flag{crypto_is_stupid_and_python_is_stupid}`
+
+
+# 12-shades-of-red-pwn
+
+> **ALERT** This one is a guessy chall
+
+We are given two images
+![a](ciphertext.jpg)
+![b](color-wheel.jpg)
+
+And the hint says :
+```
+Everyone's favorite guess god Tux just sent me a flag that he somehow encrypted with a color wheel!
+
+I don't even know where to start, the wheel looks more like a clock than a cipher... can you help me crack the code?
+```
+
+So the color wheel is basically just a number in a clock `0 starts at bright yellow color on very top` and goes on to the color on the right
+
+And we just have to convert the color in first image with the number based on the  color-wheel, convert it using base-12
+
+And we got the flag
+
+flag = `flag{9u3ss1n9_1s_4n_4rt}`

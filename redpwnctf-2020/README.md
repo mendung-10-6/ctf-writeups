@@ -1,0 +1,1 @@
+We got 68th place in this competition

@@ -17,11 +17,11 @@ flag : `flag{1_c4nt_f1nd_4_g00d_p4nd4_pun}`
 
 I struggle really hard on this one because the filter are just really strong, and i come up with a working `iframe` payload
 
-But it didnt work, and when i asked the organizer it turns out that the admin site are using chrome to run the payload 
+But it didn't work, and when i asked the organizer it turns out that the admin site are using chrome to run the payload 
 
-And with the fact that using `iframe` will create another child element thus creating a situation where we cant take the admin's cookie because of **chrome** (insert chrome jokes here)
+And with the fact that using `iframe` will create another child element thus creating a situation where we can't take the admin's cookie because of **chrome** (insert chrome jokes here)
 
-so i came up with another solution
+so I came up with another solution
 
 ```html
 <FRAMESET>
@@ -118,9 +118,9 @@ flag = `flag{c3rTific4t3_7r4n5pArAncY_fTw} `
 
 So we are given a site with a persistent cookie (that also works as csrf) and the important thing is that every process will just rely on that static csrf cookie so it must be a csrf attack, but by reviewing the code
 
-I see some interesting things happening when we want the admin to give a `gift` to our account, there is this TOC-TOU vulnerability leading us to racing condition attack
+I see some interesting things happens when we want the admin to give a `gift` to our account, there is this TOC-TOU vulnerability leading us to racing condition attack
 
-So in summary its a combinatio between csrf and race condition attack
+So in summary its a combination between csrf and race condition attack
 
 The plan here are
 ```
@@ -306,4 +306,4 @@ anyway here's the flag
 
 flag = `flag{n0_m0r3_gu3551ng}`
 
-For a record, after looking at other people's writeup i just surprised that i can use XMLHttpRequest instead of doing this stupid iframe things :(
+For a record, after looking at other people's writeup I just surprised that I can use XMLHttpRequest instead of doing this stupid iframe things :(

@@ -1,10 +1,10 @@
-#Prosopagnosia  
+# Prosopagnosia  
 > My doctor has diagnosed me with Prosopagnosia, could you maybe help? I can't distinguish between a face a flag...  
   
 In this challenge I found an unintended solution by looking at the date of the picture, we can see that each image is created at June 7 03:14 or 03:13, by doing reverse regex we can see that there is one image that is created at 03:39, opening it give us a picture of a face but a tiny flag at the bottom.  
 Flag : `cscml2020{ml_can_be_learned_easily_by_examples}`  
   
-#JSGame  
+# JSGame  
 > Can you play my JS game with smallest rounds possible?  
   
 Because I don't really like to read code, I solved this challenge by trial and error.  

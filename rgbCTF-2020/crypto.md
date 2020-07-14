@@ -1,9 +1,9 @@
 # I Love Rainbows  
-we are given a file each line containing 32-64 characters, which looks like hashes, using [crackstation](https://crackstation.net/) we can see that each hash contains 1 to 2 characters from the flag, cracking all the hash and we got the flag.  
+We are given a file each line containing 32-64 characters, which looks like hashes, using [crackstation](https://crackstation.net/) we can see that each hash contains 1 to 2 characters from the flag, cracking all the hash and we got the flag.  
 flag : `rgbCTF{4lw4ys_us3_s4lt_wh3n_h4shing}`  
   
 # e  
-for this challenge N is insanely large, because of that the the ciphertext did not reach N at this point, so we can just take eth root of c and get the flag  
+For this challenge N is insanely large, because of that the the ciphertext did not reach N at this point, so we can just take eth root of c and get the flag  
 ```python
 import gmpy2
 from Crypto.Util.number import long_to_bytes as ltb

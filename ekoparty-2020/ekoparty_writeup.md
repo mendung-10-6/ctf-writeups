@@ -55,10 +55,12 @@ for i in cipher:
 		break
 print flag
 ```
-```
+  
+```bash
 $ python solve.py | grep EKO
 EKO{super_infected}set startshe = wscript.createobject("wscript.shell")
 ```
+
 Flag : EKO{super_infected}
 
 # Discord  
@@ -116,7 +118,7 @@ Flag : EKO{1nf3ct3d}
 
 I didnt manage to create the writeup when this challenge still alive :(, but at least someone did manage to put the source code online so here we go.
 
-There's a website containing some stuff inside, here is the step of the app :
+There's a website containing some stuff inside, here is the step of the app :  
 - We got to choose what kind of event that we're attending
 - We can input a subject, body, recipient
 
@@ -215,7 +217,7 @@ There's a rabbit hole at `/error` (or so i thought) which will trigger an error 
 
 So i start the hard way, by reviewing the code itself (you know why its hard ? because of the language that i dont understand XD, i gotta jump back and forth to google translate)
 
-But after a while i noticed something good here (as the chall description said that this code didnt even pass the QA) so i know that we can reproduce the bug in this way :
+But after a while i noticed something good here (as the chall description said that this code didnt even pass the QA) so i know that we can reproduce the bug in this way :  
 - Going to `/profile` and putting `name` argument using some arbitrary template injection payload, this will make our payload stored in the db (specifically in `nombre` column inside `usuarios` table)
 - Then when we make post request to `/sendMessage`, it will make a query of `query_db('SELECT nombre FROM usuarios ORDER BY usuario_id DESC', one=True)['nombre']` which means that it will take the one last inputted `nombre` in `usuarios` table and use it inside this code `msg.body = render_template_string(acc_tmpl.replace('SERVIDOR', thequery), mensaje=request.form['body'])`
 
